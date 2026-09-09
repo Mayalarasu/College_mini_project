@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARS University | Official Campus Portal</title>
+  <meta name="description"
+    content="Welcome to ARS University. Premier institution offering world-class engineering, management, computer science, and research programs.">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+  <!-- ========================================================================== -->
+  <!-- 2. SIMPLE & ELEGANT MAIN NAVIGATION HEADER                                -->
+  <!-- ========================================================================== -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <!-- College Brand / Logo -->
+      <a href="#" class="brand-logo">
+        <img src="assets/ars-logo.png" alt="ARS University Crest Logo" id="college-logo-img">
+        <div class="brand-details">
+          <h1 id="college-name-display">ARS University</h1>
+          <p>Excellence in Research & Higher Learning</p>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About ARS</a></li>
+          <li><a href="#departments" class="nav-link">Departments</a></li>
+          <li><a href="#campus" class="nav-link">Campus Life</a></li>
+          <li><a href="#notices" class="nav-link">Notices</a></li>
+          <li><a href="#faculty" class="nav-link">Faculty & Staff</a></li>
+          <li><a href="#placements" class="nav-link">Placements</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle Light/Dark Theme"
+          aria-label="Toggle Theme">🌙</button>
+        <button class="btn-primary apply-modal-trigger">Apply Now</button>
+        <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================== -->
+  <!-- 3. HERO BANNER SECTION                                                    -->
+  <!-- ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>✨ Ranked #1 Innovation Campus</span>
+        </div>
+        <h1>Empowering Innovators at ARS University</h1>
+        <p>Discover world-class education, state-of-the-art research laboratories, vibrant student culture, and global
+          career opportunities at ARS University.</p>
+
+        <div class="hero-buttons">
+          <button class="btn-primary apply-modal-trigger">Start Application →</button>
+          <a href="#departments" class="btn-secondary">Explore Programs</a>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">✓</div>
+            <span>NAAC A++ Accredited</span>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">✓</div>
+            <span>100% Practical Learning</span>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">✓</div>
+            <span>Global Alumni Network</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <!-- ARS University Hero Image -->
+          <img src="assets/ars-hero-campus.png" alt="ARS University Grand Campus Building" id="hero-campus-img">
+        </div>
+
+        <!-- Floating Stats Badges -->
+        <div class="floating-card card-1">
+          <div class="floating-icon">🎓</div>
+          <div class="floating-text">
+            <h4>18,000+ Students</h4>
+            <p>Enrolled Across 32 Programs</p>
+          </div>
+        </div>
+
+        <div class="floating-card card-2">
+          <div class="floating-icon">💼</div>
+          <div class="floating-text">
+            <h4>52 LPA Highest CTC</h4>
+            <p>Placement Record 2025-26</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================== -->
+  <!-- 4. KEY METRICS & STATS COUNTER BAR                                        -->
+  <!-- ========================================================================== -->
+  <section class="stats-section">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <div class="stat-number" data-target="98" data-suffix="%">0%</div>
+        <div class="stat-label">Placement Record</div>
+        <div class="stat-subtext">350+ Top Recruiters</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="180" data-suffix="+">0+</div>
+        <div class="stat-label">Ph.D. & Expert Faculty</div>
+        <div class="stat-subtext">Dedicated Mentorship</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="50" data-suffix="+">0+</div>
+        <div class="stat-label">High-Tech Labs</div>
+        <div class="stat-subtext">AI, Robotics & Biotech</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="150" data-suffix=" Acres">0</div>
+        <div class="stat-label">Eco-Smart Campus</div>
+        <div class="stat-subtext">WiFi & Smart Hostels</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================== -->
+  <!-- 5. ACADEMIC DEPARTMENTS & COURSE EXPLORER                                  -->
+  <!-- ========================================================================== -->
+  <section class="departments-section" id="departments">
+    <div class="container">
+      <div class="section-title">
+        <span class="badge">ACADEMICS</span>
+        <h2>Academic Programs at ARS University</h2>
+        <p>Explore our industry-aligned undergraduate, postgraduate, and doctorate degree programs.</p>
+      </div>
+
+      <!-- Quick Search & Filter Bar -->
+      <div class="search-filter-section">
+        <div class="search-box">
+          <input type="text" id="course-search"
+            placeholder="🔍 Search programs (e.g., Computer Science, Robotics, MBA, Data Science)...">
+        </div>
+        <div class="filter-tags">
+          <button class="tag-btn active" data-filter="all">All Programs</button>
+          <button class="tag-btn" data-filter="eng">Engineering & Tech</button>
+          <button class="tag-btn" data-filter="cs">Computer Science & AI</button>
+          <button class="tag-btn" data-filter="mgmt">Management (MBA)</button>
+          <button class="tag-btn" data-filter="sci">Pure Sciences</button>
+        </div>
+      </div>
+
+      <!-- Department Cards Grid -->
+      <div class="dept-grid" id="dept-grid-container">
+
+        <!-- Dept Card 1 -->
+        <div class="dept-card" data-category="cs">
+          <div>
+            <div class="dept-icon">💻</div>
+            <div class="dept-header">
+              <h3>Computer Science & Artificial Intelligence</h3>
+              <p>Specialization in Machine Learning, Neural Networks, Cybersecurity & Cloud Engineering.</p>
+            </div>
+          </div>
+          <div>
+            <div class="dept-meta">
+              <span>Duration: <strong>4 Years (B.Tech)</strong></span>
+              <span>Intake: <strong>240 Seats</strong></span>
+            </div>
+            <button class="btn-link"
+              onclick="showDeptDetail('Computer Science & AI', 'Comprehensive 4-year B.Tech program focused on full-stack engineering, AI algorithms, cloud computing, and cybersecurity.', '4 Years (B.Tech)', '$4,500 / Year')">View
+              Syllabus & Details →</button>
+          </div>
+        </div>
+
+        <!-- Dept Card 2 -->
+        <div class="dept-card" data-category="eng">
+          <div>
+            <div class="dept-icon">⚡</div>
+            <div class="dept-header">
+              <h3>Electrical & Electronics Engineering</h3>
+              <p>Cutting-edge coursework in Smart Grids, Microcontrollers, EV Mobility & Renewable Systems.</p>
+            </div>
+          </div>
+          <div>
+            <div class="dept-meta">
+              <span>Duration: <strong>4 Years (B.Tech)</strong></span>
+              <span>Intake: <strong>120 Seats</strong></span>
+            </div>
+            <button class="btn-link"
+              onclick="showDeptDetail('Electrical & Electronics Engineering', 'Hands-on curriculum covering modern power electronics, embedded IoT systems, and green energy innovation.', '4 Years (B.Tech)', '$4,200 / Year')">View
+              Syllabus & Details →</button>
+          </div>
+        </div>
+
+        <!-- Dept Card 3 -->
+        <div class="dept-card" data-category="mgmt">
+          <div>
+            <div class="dept-icon">📊</div>
+            <div class="dept-header">
+              <h3>School of Management (MBA)</h3>
+              <p>Master corporate strategy, Financial Tech, Supply Chain Management, and Marketing Analytics.</p>
+            </div>
+          </div>
+          <div>
+            <div class="dept-meta">
+              <span>Duration: <strong>2 Years (MBA)</strong></span>
+              <span>Intake: <strong>150 Seats</strong></span>
+            </div>
+            <button class="btn-link"
+              onclick="showDeptDetail('School of Management (MBA)', 'Premier postgraduate business administration degree with corporate internship guarantees and executive mentorship.', '2 Years (MBA)', '$5,000 / Year')">View
+              Syllabus & Details →</button>
+          </div>
+        </div>
+
+        <!-- Dept Card 4 -->
+        <div class="dept-card" data-category="cs">
+          <div>
+            <div class="dept-icon">🤖</div>
+            <div class="dept-header">
+              <h3>B.Sc. Data Science & Analytics</h3>
+              <p>Interdisciplinary program covering Big Data analytics, Predictive Modeling, and Python for Data
+                Science.</p>
+            </div>
+          </div>
+          <div>
+            <div class="dept-meta">
+              <span>Duration: <strong>3 Years (B.Sc)</strong></span>
+              <span>Intake: <strong>90 Seats</strong></span>
+            </div>
+            <button class="btn-link"
+              onclick="showDeptDetail('B.Sc. Data Science & Analytics', 'Practical program designed for next-gen data analysts, statistics modelers, and enterprise AI practitioners.', '3 Years (B.Sc)', '$3,800 / Year')">View
+              Syllabus & Details →</button>
+          </div>
+        </div>
+
+        <!-- Dept Card 5 -->
+        <div class="dept-card" data-category="eng">
+          <div>
+            <div class="dept-icon">⚙️</div>
+            <div class="dept-header">
+              <h3>Mechanical & Mechatronics Engineering</h3>
+              <p>Design autonomous robotics, CAD/CAM precision engineering, and thermal dynamic systems.</p>
+            </div>
+          </div>
+          <div>
+            <div class="dept-meta">
+              <span>Duration: <strong>4 Years (B.Tech)</strong></span>
+              <span>Intake: <strong>120 Seats</strong></span>
+            </div>
+            <button class="btn-link"
+              onclick="showDeptDetail('Mechanical & Mechatronics Engineering', 'Integrated mechanical and electronics engineering with hands-on 3D printing and robotics lab access.', '4 Years (B.Tech)', '$4,100 / Year')">View
+              Syllabus & Details →</button>
+          </div>
+        </div>
+
+        <!-- Dept Card 6 -->
+        <div class="dept-card" data-category="sci">
+          <div>
+            <div class="dept-icon">🔬</div>
+            <div class="dept-header">
+              <h3>Department of Biotechnology</h3>
+              <p>Explore genetic engineering, pharmaceutical research, bio-informatics, and molecular health tech.</p>
+            </div>
+          </div>
+          <div>
+            <div class="dept-meta">
+              <span>Duration: <strong>4 Years (B.Tech)</strong></span>
+              <span>Intake: <strong>60 Seats</strong></span>
+            </div>
+            <button class="btn-link"
+              onclick="showDeptDetail('Department of Biotechnology', 'State-of-the-art biological science labs focusing on industrial bio-processing and medical innovation.', '4 Years (B.Tech)', '$4,300 / Year')">View
+              Syllabus & Details →</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================== -->
+  <!-- 6. CAMPUS LIFE & FACILITIES GALLERY                                        -->
+  <!-- ========================================================================== -->
+  <section class="campus-section" id="campus">
+    <div class="container">
+      <div class="section-title">
+        <span class="badge">INFRASTRUCTURE</span>
+        <h2>World-Class Campus Experience</h2>
+        <p>Take a glimpse into our modern academic environment, research hubs, and student recreation centers.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="assets/lab-library.png" alt="ARS University Library & Computer Lab">
+          <div class="gallery-overlay">
+            <h3>Central Digital Library & Research Labs</h3>
+            <p>24/7 Access to 120,000+ E-Journals, Supercomputing Workstations & Quiet Study Pods</p>
+          </div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/campus-life.png" alt="ARS University Amphitheater & Sports Grounds">
+          <div class="gallery-overlay">
+            <h3>Student Activity Pavilion & Sports Complex</h3>
+            <p>Olympic-sized Swimming Pool, Indoor Gymnasium, Football Turf & Cultural Amphitheater</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================== -->
+  <!-- 7. NOTICES & UPCOMING EVENTS BOARD                                        -->
+  <!-- ========================================================================== -->
+  <section class="notice-section" id="notices">
+    <div class="container notice-grid">
+      <div class="notice-box">
+        <div class="notice-header">
+          <h3>📌 Official Notice Board</h3>
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Updated Today</span>
+        </div>
+
+        <div class="notice-list">
+          <div class="notice-item">
+            <div class="notice-date">
+              <div class="day">15</div>
+              <div class="month">Sep</div>
+            </div>
+            <div class="notice-info">
+              <h4>Mid-Semester Examination Schedule Released (Fall 2026)</h4>
+              <p>All undergraduate students can download their hall tickets from the student portal.</p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <div class="day">22</div>
+              <div class="month">Sep</div>
+            </div>
+            <div class="notice-info">
+              <h4>ARS Global Conference on AI & Sustainable Innovation (ICAST-26)</h4>
+              <p>Keynote speakers from top global research labs. Paper submission deadline extended.</p>
+            </div>
+          </div>
+
+          <div class="notice-item">
+            <div class="notice-date">
+              <div class="day">05</div>
+              <div class="month">Oct</div>
+            </div>
+            <div class="notice-info">
+              <h4>Annual Inter-University Hackathon "ARS TechFest 2026"</h4>
+              <p>Registrations open for coding competitions, robotics derby, and musical night.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side Events Widget -->
+      <div class="events-box">
+        <h3 style="margin-bottom: 1.25rem;">🎉 Upcoming Campus Events</h3>
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div
+            style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <span style="color: var(--primary); font-weight: 700; font-size: 0.8rem;">SEP 18, 2026</span>
+            <h4 style="font-size: 0.95rem; margin-top: 0.2rem;">Google & Microsoft Placement Drive</h4>
+            <p style="font-size: 0.8rem; color: var(--text-muted);">Auditorium Block A • 9:00 AM</p>
+          </div>
+
+          <div
+            style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <span style="color: var(--accent); font-weight: 700; font-size: 0.8rem;">OCT 02, 2026</span>
+            <h4 style="font-size: 0.95rem; margin-top: 0.2rem;">ARS University Alumni Leadership Summit</h4>
+            <p style="font-size: 0.8rem; color: var(--text-muted);">Main Hall & Virtual Live Stream</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================== -->
+  <!-- 8. FOUNDER & MANAGEMENT WELCOME MESSAGE                                     -->
+  <!-- ========================================================================== -->
+  <div class="container" id="about">
+    <div class="leadership-card">
+      <div class="leader-avatar-wrapper"
+        style="width: 110px; height: 110px; border-radius: var(--radius-full); overflow: hidden; border: 3px solid var(--accent); flex-shrink: 0;">
+        <img src="assets/faculty-aarun.jpg" alt="Aarun Rasheed M" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="leader-content">
+        <blockquote style="font-size: 1.15rem; font-style: italic; color: var(--text-main); margin-bottom: 1rem;">
+          "At ARS University, our vision is to empower every student with world-class technical education, ethical
+          values, and global career opportunities to shape a better tomorrow."
+        </blockquote>
+        <div class="leader-author">
+          <h4 id="dean-name-display" style="font-size: 1.25rem; color: var(--primary);">Aarun Rasheed M <span
+              style="font-size: 0.95rem; font-weight: 700; color: var(--accent);">(M.Com)</span></h4>
+          <p style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted);">Founder & Managing Director, ARS
+            University</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================== -->
+  <!-- 9. PEOPLE WORKING AT THE COLLEGE (FACULTY & STAFF)                         -->
+  <!-- ========================================================================== -->
+  <section class="faculty-section" id="faculty">
+    <div class="container">
+      <div class="section-title">
+        <span class="badge">OUR TEAM</span>
+        <h2>People Working at ARS University</h2>
+        <p>Meet our distinguished management, deans, department heads, and administrative officers guiding student
+          success.</p>
+      </div>
+
+      <!-- Faculty Group Hero Visual -->
+      <div class="faculty-hero-banner">
+        <img src="assets/ars-faculty.png" alt="ARS University Faculty & Staff Members">
+        <div class="faculty-hero-overlay">
+          <h3>Distinguished Educators & Leadership Board</h3>
+          <p>Our leaders and faculty members bring doctorates, professional experience, and dedication to academic
+            excellence.</p>
+        </div>
+      </div>
+
+      <!-- Key Faculty & Administration Staff Grid (Founder in 1st Place) -->
+      <div class="faculty-grid">
+
+        <!-- 1st Place: Founder & Managing Director -->
+        <div class="faculty-card" style="border: 2px solid var(--accent); background: rgba(245, 158, 11, 0.04);">
+          <div class="faculty-avatar-wrapper" style="border-color: var(--accent);">
+            <img src="assets/faculty-aarun.jpg" alt="Aarun Rasheed M" class="faculty-photo">
+          </div>
+          <h3 class="faculty-name">Aarun Rasheed M</h3>
+          <div class="faculty-degrees">M.Com</div>
+          <span class="faculty-role" style="background: var(--accent); color: #0f172a; font-weight: 800;">⭐ Founder &
+            Managing Director</span>
+          <p class="faculty-dept">Executive Management Board</p>
+          <a href="mailto:aarun.rasheed@ars.edu" class="faculty-email">✉️ aarun.rasheed@ars.edu</a>
+        </div>
+
+        <!-- 2nd Member: Dr. Shameera Fathima J -->
+        <div class="faculty-card">
+          <div class="faculty-avatar-wrapper">
+            <img src="assets/faculty-shameera.jpg" alt="Dr. Shameera Fathima J" class="faculty-photo">
+          </div>
+          <h3 class="faculty-name">Dr. Shameera Fathima J</h3>
+          <div class="faculty-degrees">Ph.D.</div>
+          <span class="faculty-role">Principal</span>
+          <p class="faculty-dept">Office of the Principal</p>
+          <a href="mailto:principal@ars.edu" class="faculty-email">✉️ principal@ars.edu</a>
+        </div>
+
+        <!-- 3rd Member: Sandhiya D -->
+        <div class="faculty-card">
+          <div class="faculty-avatar-wrapper">
+            <img src="assets/faculty-sandhiya.jpg" alt="Sandhiya D" class="faculty-photo">
+          </div>
+          <h3 class="faculty-name">Sandhiya D</h3>
+          <div class="faculty-degrees">MBBS</div>
+          <span class="faculty-role">Medical Dean</span>
+          <p class="faculty-dept">School of Medical Sciences</p>
+          <a href="mailto:sandhiya@ars.edu" class="faculty-email">✉️ sandhiya@ars.edu</a>
+        </div>
+
+        <!-- 4th Member: Dr. Ridha Fathima -->
+        <div class="faculty-card">
+          <div class="faculty-avatar-wrapper">
+            <img src="assets/faculty-ridha.jpg" alt="Dr. Ridha Fathima" class="faculty-photo">
+          </div>
+          <h3 class="faculty-name">Dr. Ridha Fathima</h3>
+          <div class="faculty-degrees">BDS</div>
+          <span class="faculty-role">Dental Dept HOD</span>
+          <p class="faculty-dept">Department of Dental Sciences</p>
+          <a href="mailto:ridha.fathima@ars.edu" class="faculty-email">✉️ ridha.fathima@ars.edu</a>
+        </div>
+
+        <!-- 5th Member: Uthamarajan L -->
+        <div class="faculty-card">
+          <div class="faculty-avatar-wrapper">
+            <img src="assets/faculty-uthamarajan.jpg" alt="Uthamarajan L" class="faculty-photo">
+          </div>
+          <h3 class="faculty-name">Uthamarajan L</h3>
+          <div class="faculty-degrees">MBA, M.Com</div>
+          <span class="faculty-role">HOD of Business Administration</span>
+          <p class="faculty-dept">School of Management & Commerce</p>
+          <a href="mailto:uthamarajan@ars.edu" class="faculty-email">✉️ uthamarajan@ars.edu</a>
+        </div>
+
+        <!-- 6th Member: Anwar Hussain -->
+        <div class="faculty-card">
+          <div class="faculty-avatar-wrapper">
+            <img src="assets/faculty-anwar.jpg" alt="Anwar Hussain" class="faculty-photo">
+          </div>
+          <h3 class="faculty-name">Anwar Hussain</h3>
+          <div class="faculty-degrees">MCA, M.Phil, Ph.D.</div>
+          <span class="faculty-role">Computer Science Dept Head</span>
+          <p class="faculty-dept">School of Computer Science & Tech</p>
+          <a href="mailto:anwar.hussain@ars.edu" class="faculty-email">✉️ anwar.hussain@ars.edu</a>
+        </div>
+
+        <!-- 7th Member: Sadham Hussain AR -->
+        <div class="faculty-card">
+          <div class="faculty-avatar-wrapper">
+            <img src="assets/faculty-sadham.jpg" alt="Sadham Hussain AR" class="faculty-photo">
+          </div>
+          <h3 class="faculty-name">Sadham Hussain AR</h3>
+          <div class="faculty-degrees">B.E., M.E.</div>
+          <span class="faculty-role">Placement Coordinator</span>
+          <p class="faculty-dept">Corporate Training & Placement Cell</p>
+          <a href="mailto:sadham.hussain@ars.edu" class="faculty-email">✉️ sadham.hussain@ars.edu</a>
+        </div>
+
+        <!-- 8th Member: Jai Shree -->
+        <div class="faculty-card">
+          <div class="faculty-avatar-wrapper">
+            <img src="assets/faculty-jaishree.jpg" alt="Jai Shree" class="faculty-photo">
+          </div>
+          <h3 class="faculty-name">Jai Shree</h3>
+          <div class="faculty-degrees">M.Sc, M.Phil</div>
+          <span class="faculty-role">Faculty Member</span>
+          <p class="faculty-dept">Department of Pure & Applied Sciences</p>
+          <a href="mailto:jaishree@ars.edu" class="faculty-email">✉️ jaishree@ars.edu</a>
+        </div>
+
+        <!-- 9th Member: Thamim Basha S -->
+        <div class="faculty-card">
+          <div class="faculty-avatar-wrapper">
+            <img src="assets/faculty-thamim.jpg" alt="Thamim Basha S" class="faculty-photo">
+          </div>
+          <h3 class="faculty-name">Thamim Basha S</h3>
+          <div class="faculty-degrees">B.E.</div>
+          <span class="faculty-role">Head of Transport & Discipline</span>
+          <p class="faculty-dept">Campus Logistics & Discipline Division</p>
+          <a href="mailto:thamim.basha@ars.edu" class="faculty-email">✉️ thamim.basha@ars.edu</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================== -->
+  <!-- 10. TOP RECRUITERS & PLACEMENT PARTNERS                                    -->
+  <!-- ========================================================================== -->
+  <section class="placements-section" id="placements">
+    <div class="container">
+      <div class="section-title" style="margin-bottom: 1.5rem;">
+        <span class="badge">CAREER ADVANCEMENT</span>
+        <h2>Top Industry Placement Partners</h2>
+        <p>ARS University graduates are actively recruited by leading tech giants and multinational corporations.</p>
+      </div>
+
+      <div class="recruiter-logos">
+        <div class="logo-badge">GOOGLE</div>
+        <div class="logo-badge">MICROSOFT</div>
+        <div class="logo-badge">AMAZON</div>
+        <div class="logo-badge">TATA MOTORS</div>
+        <div class="logo-badge">INFOSYS</div>
+        <div class="logo-badge">ACCENTURE</div>
+        <div class="logo-badge">DELOITTE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================== -->
+  <!-- 11. CONTACT & INQUIRY FORM                                                 -->
+  <!-- ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info-cards">
+        <div class="section-title" style="text-align: left; margin-bottom: 2rem;">
+          <span class="badge">CONNECT WITH US</span>
+          <h2>Get in Touch with ARS Admissions</h2>
+          <p>Have questions about courses, eligibility, hostel accommodation, or scholarships? Contact our team.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Campus Address</h4>
+            <p>ARS University Campus, Knowledge Expressway, Sector 5, Tech City</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h4>Email Contacts</h4>
+            <p>admissions@ars.edu | info@ars.edu</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Toll-Free Helpdesk</h4>
+            <p>+91 (0) 800-555-0199 | +91 (0) 800-555-0200</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Inquiry Form -->
+      <div class="form-box">
+        <h3 style="margin-bottom: 1.5rem;">Send Admission Inquiry</h3>
+        <form id="inquiry-form">
+          <div class="form-group">
+            <label for="student-name">Full Name *</label>
+            <input type="text" id="student-name" class="form-control" placeholder="John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="student-email">Email Address *</label>
+            <input type="email" id="student-email" class="form-control" placeholder="john@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="student-phone">Phone Number *</label>
+            <input type="tel" id="student-phone" class="form-control" placeholder="+91 98765 43210" required>
+          </div>
+
+          <div class="form-group">
+            <label for="preferred-course">Program of Interest</label>
+            <select id="preferred-course" class="form-control">
+              <option>B.Tech Computer Science & AI</option>
+              <option>B.Tech Electrical Engineering</option>
+              <option>Master of Business Administration (MBA)</option>
+              <option>B.Sc Data Science & Analytics</option>
+              <option>Other / General Guidance</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="student-msg">Message / Questions</label>
+            <textarea id="student-msg" class="form-control"
+              placeholder="Tell us about your academic queries..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary"
+            style="width: 100%; justify-content: center; margin-top: 1rem;">Submit Inquiry →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================== -->
+  <!-- 12. FOOTER SECTION                                                         -->
+  <!-- ========================================================================== -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <img src="assets/ars-logo.png" alt="ARS University Logo" style="width: 40px; height: 40px;">
+            <div class="brand-details">
+              <h1 style="color: #ffffff;">ARS University</h1>
+              <p style="color: #64748b;">Excellence in Research</p>
+            </div>
+          </div>
+          <p style="font-size: 0.9rem; margin-bottom: 1.5rem; max-width: 320px;">Empowering students with
+            industry-relevant skills, ethical values, and global research capabilities.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About ARS</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#faculty">Faculty & Staff</a></li>
+            <li><a href="#notices">Notice Board</a></li>
+            <li><a href="#placements">Placement Cell</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Portals</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="apply-modal-trigger">Online Admission 2026</a></li>
+            <li><a href="#" id="footer-login-btn"
+                onclick="document.getElementById('login-modal').classList.add('active')">Student ERP Portal</a></li>
+            <li><a href="#">Faculty Workspace</a></li>
+            <li><a href="#">Alumni Network</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Accreditation</h4>
+          <ul class="footer-links">
+            <li><a href="#">NAAC Grade 'A++'</a></li>
+            <li><a href="#">AICTE Approved</a></li>
+            <li><a href="#">UGC Recognized</a></li>
+            <li><a href="#">NIRF Ranking Top 50</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 ARS University. All Rights Reserved.</p>
+        <p>Built with High-Performance Clean Code</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================== -->
+  <!-- 13. INTERACTIVE MODALS                                                     -->
+  <!-- ========================================================================== -->
+
+  <!-- Modal 1: Student Portal Login -->
+  <div class="modal-backdrop" id="login-modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close Modal">&times;</button>
+      <h3 style="margin-bottom: 0.5rem;">🔐 ARS ERP Student & Staff Portal</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Sign in with your ARS Registration
+        or Employee ID</p>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label for="login-id">Registration / Employee ID</label>
+          <input type="text" id="login-id" class="form-control" placeholder="e.g. ARS2026998" required>
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" class="form-control" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">Sign
+          In to Dashboard →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 2: Online Application Form -->
+  <div class="modal-backdrop" id="apply-modal">
+    <div class="modal-card" style="max-width: 560px;">
+      <button class="modal-close" aria-label="Close Modal">&times;</button>
+      <h3 style="margin-bottom: 0.5rem;">🎓 ARS University Admission Application 2026</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem;">Fill in your details to start the
+        provisional registration.</p>
+
+      <form id="application-form">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label for="app-fname">First Name</label>
+            <input type="text" id="app-fname" class="form-control" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label for="app-lname">Last Name</label>
+            <input type="text" id="app-lname" class="form-control" placeholder="Doe" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="app-email">Email Address</label>
+          <input type="email" id="app-email" class="form-control" placeholder="john@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="app-degree">Select Program</label>
+          <select id="app-degree" class="form-control">
+            <option>B.Tech Computer Science & AI</option>
+            <option>B.Tech Electrical & Electronics</option>
+            <option>Master of Business Administration (MBA)</option>
+            <option>B.Sc Data Science & Analytics</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">Submit
+          Application →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal 3: Department Syllabus & Details -->
+  <div class="modal-backdrop" id="dept-detail-modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close Modal">&times;</button>
+      <h3 id="modal-dept-title" style="margin-bottom: 0.5rem;">Department Detail</h3>
+      <p id="modal-dept-desc" style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">Course
+        overview text</p>
+
+      <div
+        style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+        <p style="font-size: 0.85rem;"><strong>Course Duration:</strong> <span id="modal-dept-duration">4 Years</span>
+        </p>
+        <p style="font-size: 0.85rem; margin-top: 0.4rem;"><strong>Annual Tuition Fee:</strong> <span
+            id="modal-dept-fees">$4,500</span></p>
+      </div>
+
+      <button class="btn-primary apply-modal-trigger" onclick="closeAllModals()"
+        style="width: 100%; justify-content: center;">Apply for this Course Now →</button>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
